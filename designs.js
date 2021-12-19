@@ -1,5 +1,4 @@
-
-let table = document.body.querySelector("#pixelCanvas")
+const table = document.body.querySelector("#pixelCanvas")
 const myForm = document.body.querySelector("#sizePicker")
 
 myForm.addEventListener("submit", function (event) {
@@ -19,9 +18,14 @@ function makeGrid() {
 	}
 }
 
-table.addEventListener('click', function(evt){
+table.addEventListener('click', function(evt) {
 	let currentColor = document.body.querySelector("#colorPicker").value
 	if (evt.target.nodeName === 'TD') {
-		td.style.backgroundColor = currentColor;
+		if (evt.target.style.backgroundColor = currentColor) {
+			evt.target.style.backgroundColor = white;
+		}
+		else {
+			evt.target.style.backgroundColor = currentColor;
+		}
 	}
-})
+});
