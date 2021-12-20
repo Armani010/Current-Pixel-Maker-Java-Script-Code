@@ -1,5 +1,5 @@
-const table = document.body.querySelector("#pixelCanvas")
-const myForm = document.body.querySelector("#sizePicker")
+const table = document.body.querySelector("#pixelCanvas");
+const myForm = document.body.querySelector("#sizePicker");
 
 function makeGrid() {
 	table.innerHTML=""
@@ -11,7 +11,7 @@ function makeGrid() {
 			newRow.insertCell()
 		}
 	}
-}
+};
 
 myForm.addEventListener("submit", function (event) {
 	event.preventDefault();
